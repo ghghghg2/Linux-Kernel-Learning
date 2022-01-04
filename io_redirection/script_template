@@ -1,0 +1,13 @@
+# indicate which interperter to use
+#!/bin/bash
+
+# create empty text file
+touch words.txt
+
+# fill it with specified words
+echo "peach\n" >> words.txt
+echo "pear\n" >> words.txt
+echo "apple\n" >> words.txt
+
+
+
