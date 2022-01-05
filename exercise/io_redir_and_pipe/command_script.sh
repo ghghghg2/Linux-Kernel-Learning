@@ -5,9 +5,15 @@ usage() {
 	echo "USAGE:    command_script -a [clear|execute]"
 	echo "clear: clear old file"
 	echo "execute: execute the command"
+	exit -1
 }
 
-while getopts "a:?" option; do
+# check for no option
+if [ $# = 0 ]; then 
+	usage
+fi
+
+while getopts ":a:" option; do
 
 	case "${option}" in
 		a) # clear
@@ -23,7 +29,7 @@ while getopts "a:?" option; do
 				echo "nothing..."
 			fi
 			;;
-		[?]) #nothing specified
+		?) #nothing specified
 			usage
 	esac
 done
