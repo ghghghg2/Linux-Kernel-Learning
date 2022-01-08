@@ -4,6 +4,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "errno.h"
+#include "wait.h"
 
 
 pid_t Fork(void); // fork() error handling wrapper
