@@ -183,3 +183,5 @@ ssize_t	rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen);
 ssize_t Rio_readn(int fd, void *usrbuf, size_t n);
 void Rio_writen(int fd, void *usrbuf, size_t n);
 void Rio_readinitb(rio_t *rp, int fd); 
+
+#endif
